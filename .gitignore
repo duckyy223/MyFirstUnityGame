@@ -1,4 +1,4 @@
-# Unity folders/files to ignore
+# Unity generated folders
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -6,7 +6,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/[Mm]emory[Cc]aptures/
+/[Mm]emoryCaptures/
 /[Rr]ecordings/
 
 # Never ignore Assets meta files
@@ -16,8 +16,9 @@
 .vs/
 .vscode/
 .idea/
+.gradle/
 
-# Visual Studio / Rider files
+# Visual Studio / Rider / MonoDevelop files
 *.csproj
 *.unityproj
 *.sln
@@ -33,15 +34,14 @@
 *.opendb
 *.VC.db
 
-# Builds & temporary files
+# Crash reports and logs
+sysinfo.txt
+
+# Builds
 *.apk
 *.aab
 *.unitypackage
 *.app
 
-# Crash reports
-sysinfo.txt
-
-# OS files
-.DS_Store
-Thumbs.db
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
