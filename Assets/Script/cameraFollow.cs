@@ -12,7 +12,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (player != null)
         {
-            Vector3 posicion_jugador = new Vector3(player.position.x, transform.position.y, transform.position.z);
+            Vector3 posicion_jugador = new Vector3(player.position.x, player.position.y, transform.position.z);
             Vector3 posicion_suave = Vector3.Lerp(transform.position, posicion_jugador, velocidad_suave);
             transform.position = posicion_suave;
         }
